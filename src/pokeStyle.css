@@ -1,0 +1,46 @@
+body {
+    width: 100%;
+    margin: 0;
+    background-color: #2E388D; 
+}
+
+.pokezeresInBox {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.pokeText {
+    margin-left: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+    color: #FAAE31;
+}
+
+.pokeLogo {
+    width: 15%;
+    margin-right: 2rem;
+}
+
+.pokeList {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pokeListName {
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 4rem;
+}
+
+.pokeImage{
+    width: 20%;
+}
