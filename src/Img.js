@@ -10,8 +10,7 @@ class Image extends Component {
   async componentDidMount() {
     const response = await axios.get(this.props.url);
 
-    console.log(response.data.sprites);
-
+    
     this.setState({
       image: response.data.sprites.other.dream_world.front_default
     });
@@ -20,7 +19,7 @@ class Image extends Component {
   render() {
     return (
       <div>
-        <img className="pokeImage" src={this.state.img}/>
+        <img className="pokeImage" src={this.state.image}/>
       </div>
     );
   }

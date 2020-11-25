@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Pokeimage from './img.js'
+import Image from './Img.js'
 import './pokeStyle.css';
 import logo from './Assets/logo2.png';
 
@@ -15,7 +15,7 @@ class pokeApi extends Component {
 
   async componentDidMount(){
     const response = await api.get()
-    console.log(response.data.results)
+    
     
     this.setState({
       pokeList: response.data.results
@@ -36,7 +36,7 @@ class pokeApi extends Component {
         <div className="pokeList">
           {this.state.pokeList.map((item, index) => (
             <div className="pokeListName" key={index}>
-              <Pokeimage url={item.url} />
+              <Image className="pokeImage" url={item.url} />
               <p className="pokeName">{item.name}</p>
             </div>
           ))}
